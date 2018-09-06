@@ -19,7 +19,7 @@ before_install:
   - docker build -t jgdomine/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run jgdomine jgdomine/react-test npm run test -- --coverage
+  - docker run jgdomine/react-test npm run test -- --coverage
 
 deploy:
   provider: script
